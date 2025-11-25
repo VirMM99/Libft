@@ -59,8 +59,11 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
 
-bonus: $(OBJS_BONUS)
+bonus = .bonus
+
+.bonus: $(OBJS_BONUS)
 	ar -rcs $(NAME) $(OBJS_BONUS)
+	touch (ALGO MAS PARA QUE NO HAGA RELINK PERO NO TENGO EL CUADERNO)
 
 clean: 
 	rm -rf $(OBJS) $(OBJS_BONUS)
