@@ -63,7 +63,7 @@ bonus = .bonus
 
 .bonus: $(OBJS_BONUS)
 	ar -rcs $(NAME) $(OBJS_BONUS)
-	touch (ALGO MAS PARA QUE NO HAGA RELINK PERO NO TENGO EL CUADERNO)
+		touch .bonus //para que no te haga relink el Bonus//
 
 clean: 
 	rm -rf $(OBJS) $(OBJS_BONUS)
